@@ -56,7 +56,7 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   browserSync.init({
     files: ['./**/*.php'],
-    proxy: 'http://localhost:8888/wordpress/',
+    proxy: 'http://localhost:8000/',
   });
   gulp.watch('./sass/**/*.scss', ['sass', reload]);
   gulp.watch('./js/*.js', ['js', reload]);
