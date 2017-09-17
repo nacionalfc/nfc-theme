@@ -60,7 +60,6 @@
 		display: block;
 		color: $color__background-body;
 		text-decoration: none;
-		text-transform: uppercase;
 	}
 
 	.current_page_item > a,
@@ -108,7 +107,7 @@
 		position: absolute;
 	  top: 79px;
 		width: 100%;
-		font-size: 14px;
+		font-size: 16px;
 		display: flex;
 		flex-direction: column;
 		height: 100%;

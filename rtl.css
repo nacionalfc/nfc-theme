@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -226,7 +227,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -455,8 +456,7 @@ a {
   .main-navigation a {
     display: block;
     color: #fff;
-    text-decoration: none;
-    text-transform: uppercase; }
+    text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle {
@@ -490,7 +490,7 @@ a {
     position: absolute;
     top: 79px;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
