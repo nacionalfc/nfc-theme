@@ -1,5 +1,4 @@
 .main-navigation {
-	float: right;
 
 	ul {
 		display: none;
@@ -72,16 +71,15 @@
 /* Small menu. */
 .menu-toggle {
 	background-color: transparent;
-	border: none;
 	border-radius: 3px;
+	border: none;
 	color: white;
 	cursor: pointer;
-	display: inline-block;
-	float: right;
 	height: 48px;
 	margin: 8px 0;
-	position: relative;
+	position: absolute;
 	width: 48px;
+  right: 15px;
 
 	> .hidden {
 		display: none;
@@ -100,17 +98,16 @@
 	ul {
 		background-color: $color__nfc-primary;
 		bottom: 0;
-		display: inline-block;
-		left: 0;
-		padding: 15px;
-		padding-left: 3em;
-		position: absolute;
-	  top: 79px;
-		width: 100%;
-		font-size: 16px;
 		display: flex;
 		flex-direction: column;
+		font-size: 16px;
 		height: 100%;
+		left: 0;
+		padding-left: 3em;
+		padding: 15px;
+		position: fixed;
+		width: 100%;
+	  top: 79px;
 
 		li {
 			padding: 10px 0;
@@ -127,18 +124,37 @@
 	}
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 62em) {
+
 	.menu-toggle {
 		display: none;
 	}
-	.main-navigation {
-		clear: both;
-		float: left;
 
-		ul {
-			display: block;
+	.main-navigation {
+		float: left;
+    font-size: 1.1em;
+    padding-left: 1em;
+    margin-top: 3.8em;
+	}
+
+	.main-navigation ul {
+		display: flex;
+	}
+
+	.main-navigation ul li {
+    background: transparent url('//cdn.nacionalfc.com.br/themes/nfc_menu_separator.png') no-repeat scroll right 50%;
+
+		&:last-child {
+			background: none;
 		}
 	}
+
+	.main-navigation ul li a {
+			padding: 12px 15px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
 }
 
 .comment-navigation,

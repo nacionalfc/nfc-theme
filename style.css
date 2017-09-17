@@ -424,53 +424,52 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  float: right; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 100%;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        color: #fff;
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    color: #fff;
-    text-decoration: none; }
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999; }
+    .main-navigation ul ul ul {
+      left: -999em;
+      top: 0; }
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+      left: 100%; }
+    .main-navigation ul ul a {
+      color: #fff;
+      width: 200px; }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto; }
+
+.main-navigation li {
+  float: left;
+  position: relative; }
+
+.main-navigation a {
+  display: block;
+  color: #fff;
+  text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle {
   background-color: transparent;
-  border: none;
   border-radius: 3px;
+  border: none;
   color: white;
   cursor: pointer;
-  display: inline-block;
-  float: right;
   height: 48px;
   margin: 8px 0;
-  position: relative;
-  width: 48px; }
+  position: absolute;
+  width: 48px;
+  right: 15px; }
   .menu-toggle > .hidden {
     display: none; }
   .menu-toggle::before {
@@ -483,14 +482,6 @@ a {
   .main-navigation.toggled ul {
     background-color: #173e7d;
     bottom: 0;
-    display: inline-block;
-    left: 0;
-    padding: 15px;
-    padding-left: 3em;
-    position: absolute;
-    top: 79px;
-    width: 100%;
-    font-size: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -498,7 +489,14 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100%; }
+    font-size: 16px;
+    height: 100%;
+    left: 0;
+    padding-left: 3em;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 79px; }
     .main-navigation.toggled ul li {
       padding: 10px 0; }
   .main-navigation.toggled .menu-toggle {
@@ -507,14 +505,27 @@ a {
     content: '\f00d';
     font-family: FontAwesome; }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 62em) {
   .menu-toggle {
     display: none; }
   .main-navigation {
-    clear: both;
-    float: left; }
-    .main-navigation ul {
-      display: block; } }
+    float: left;
+    font-size: 1.1em;
+    padding-left: 1em;
+    margin-top: 3.8em; }
+  .main-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .main-navigation ul li {
+    background: transparent url("//cdn.nacionalfc.com.br/themes/nfc_menu_separator.png") no-repeat scroll right 50%; }
+    .main-navigation ul li:last-child {
+      background: none; }
+  .main-navigation ul li a {
+    padding: 12px 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -654,17 +665,22 @@ a {
 
 .site-header {
   background-color: #173e7d;
-  background-image: linear-gradient(to bottom, #001241 0%, #173e7d 50%);
+  background-image: linear-gradient(to bottom, #001241 0%, #173e7d 100%);
   border-bottom: solid 5px #001241;
   margin-bottom: 15px;
   padding: 5px 0; }
-  .site-header .container > .site-branding {
+  .site-header .site-branding {
     float: left; }
-  .site-header .container > .site-branding > a > .site-logo {
-    height: 64px;
+  .site-header .site-logo {
     width: 64px; }
-  .site-header .container > .site-branding > a > .site-title {
+  .site-header .site-title {
     display: none; }
+
+@media screen and (min-width: 37.5em) {
+  .site-header {
+    padding: 15px 0 10px 0; }
+    .site-header .site-logo {
+      width: 114px; } }
 
 /*--------------------------------------------------------------
 ## Posts and pages
