@@ -495,8 +495,9 @@ a {
     padding-left: 3em;
     padding: 15px;
     position: fixed;
+    top: 79px;
     width: 100%;
-    top: 79px; }
+    z-index: 9999; }
     .main-navigation.toggled ul li {
       padding: 10px 15px; }
   .main-navigation.toggled .menu-toggle {
