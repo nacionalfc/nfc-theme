@@ -1,0 +1,31 @@
+.widget {
+  background: $color__background-body;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px $color__background-hr;
+  float: left;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+
+  .widget-title {
+    background-color: $color__nfc-primary;
+    border-bottom: 5px solid $color__nfc-darkblue;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: $color__background-body;
+    font-size: 0.85em;
+    font-weight: 700;
+    margin: -15px -14px 15px;
+    padding: 10px 15px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
