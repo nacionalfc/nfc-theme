@@ -135,6 +135,10 @@
     font-size: 1.1em;
     padding-left: 1em;
     margin-top: 3.8em;
+
+		&.toggled {
+			display: none;
+		}
 	}
 
 	.main-navigation ul {

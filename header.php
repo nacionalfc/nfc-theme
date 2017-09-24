@@ -44,7 +44,7 @@
 					) );
 				?>
 			</nav><!-- #site-navigation -->
-			<div class="clearfix"></div>
+			<div class="clear"></div>
 		</div>
 	</header><!-- #masthead -->
 
