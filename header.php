@@ -28,7 +28,7 @@
 		<div class="container">
 			<div class="site-branding">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img class="site-logo" src="//cdn.nacionalfc.com.br/img/nacionalfc-escudo.svg" height="128px" width="128px">
+						<img class="site-logo" src="//cdn.nacionalfc.com.br/img/nacionalfc-escudo.svg" height="64px" width="64px" alt="Nacional FC">
 						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 					</a>
 			</div><!-- .site-branding -->

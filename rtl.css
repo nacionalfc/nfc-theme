@@ -1,6 +1,6 @@
 /*!
 Theme Name: NFC Theme
-Theme URI: http://underscores.me/
+Theme URI: http://www.nacionalfc.com.br
 Author: Ruan Carvalho
 Author URI: http://www.nacionalfc.com.br
 Description: WordPress Theme for Nacional FC website
@@ -498,7 +498,7 @@ a {
     width: 100%;
     top: 79px; }
     .main-navigation.toggled ul li {
-      padding: 10px 0; }
+      padding: 10px 15px; }
   .main-navigation.toggled .menu-toggle {
     background-color: #001241; }
   .main-navigation.toggled .menu-toggle::before {
@@ -694,11 +694,16 @@ a {
   background-image: linear-gradient(to bottom, #001241 0%, #173e7d 100%);
   border-bottom: solid 5px #001241;
   margin-bottom: 15px;
-  min-height: 85px;
+  min-height: 80px;
   padding: 5px 0; }
   .site-header .site-branding {
     float: right; }
+    .site-header .site-branding a {
+      display: block;
+      line-height: 0; }
   .site-header .site-logo {
+    color: white;
+    line-height: 64px;
     width: 64px; }
   .site-header .site-title {
     display: none; }

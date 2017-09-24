@@ -8,14 +8,21 @@
   background-image: linear-gradient(to bottom, #001241 0%, #173e7d 100%);
   border-bottom: solid 5px #001241;
   margin-bottom: 15px;
-  min-height: 85px;
+  min-height: 80px;
   padding: 5px 0;
 
   .site-branding {
     float: left;
+
+    a {
+      display: block;
+      line-height: 0;
+    }
   }
 
   .site-logo {
+    color: white;
+    line-height: 64px;
     width: 64px;
   }
 
